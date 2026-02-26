@@ -4,9 +4,9 @@ import { SectionHeading } from "@/components/ui";
 export default function ContactPage() {
   return (
     <PageShell>
-      <section className="section-wrap py-20">
+      <section className="section-wrap py-16">
         <SectionHeading title="Contact Strikepoint Security" description="Tell us about your environment and we will follow up with the right deployment guidance." />
-        <form className="card grid gap-4 p-6 sm:grid-cols-2" aria-label="Contact form">
+        <form className="card grid gap-4 p-5 sm:grid-cols-2" aria-label="Contact form">
           <label className="text-sm text-slate-200">Name<input className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2" type="text" required /></label>
           <label className="text-sm text-slate-200">Work Email<input className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2" type="email" required /></label>
           <label className="text-sm text-slate-200 sm:col-span-2">Company<input className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2" type="text" /></label>
