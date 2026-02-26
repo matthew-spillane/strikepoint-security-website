@@ -64,6 +64,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* AI-Powered Analysis */}
+      <section className="py-16">
+        <div className="section-wrap">
+          <SectionHeading
+            eyebrow="Artificial Intelligence"
+            title="Every scan reviewed by an AI threat analyst"
+            description="Beyond automated checks, SafeLink uses Claude AI to holistically evaluate each URL and deliver a plain-English verdict — even when reputation databases return clean results. Zero-day phishing doesn't stand a chance."
+          />
+          <div className="grid gap-4 lg:grid-cols-[1fr,1fr]">
+            {/* Mock AI verdict card */}
+            <div className="card border-red-900/40 p-5">
+              <div className="mb-4 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="h-2 w-2 rounded-full bg-red-400 shadow-[0_0_6px_rgba(248,113,113,0.6)]" />
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-400">AI Verdict</span>
+                </div>
+                <span className="rounded-full bg-red-950/60 px-3 py-0.5 text-xs font-medium text-red-300">Confidence: High</span>
+              </div>
+              <p className="text-2xl font-semibold text-red-400">Likely Phishing</p>
+              <div className="mt-4 rounded-xl border border-slate-800/60 bg-surface/60 p-4">
+                <p className="text-xs font-medium uppercase tracking-wider text-muted">Explanation</p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                  This domain combines login keywords with a Microsoft brand reference on a non-Microsoft TLD — a classic impersonation pattern. The domain is 11 days old and hosted on infrastructure commonly associated with phishing campaigns.
+                </p>
+              </div>
+            </div>
+            {/* Supporting context */}
+            <div className="flex flex-col gap-4">
+              <div className="card p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Why AI matters</p>
+                <h3 className="mt-2 font-semibold text-white">Catches what signatures miss</h3>
+                <p className="mt-2 text-sm text-muted">Traditional blocklists rely on known indicators. AI analysis evaluates the full context — domain naming patterns, page structure, hosting signals — to flag threats before they appear in any feed.</p>
+              </div>
+              <div className="card p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Plain-English output</p>
+                <h3 className="mt-2 font-semibold text-white">Verdicts your team can act on</h3>
+                <p className="mt-2 text-sm text-muted">No more deciphering cryptic scores. Every AI verdict includes a human-readable explanation that analysts can paste directly into tickets and escalations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16">
         <div className="section-wrap">
           <SectionHeading eyebrow="How it works" title="Three steps from link intake to analyst verdict" />
