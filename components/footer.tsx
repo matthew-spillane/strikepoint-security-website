@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -5,15 +6,23 @@ export function Footer() {
     <footer className="border-t border-slate-800 py-8">
       <div className="section-wrap">
         <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
-          <div>
-            <p className="text-sm font-medium text-white">Products</p>
-            <ul className="mt-2 space-y-1">
-              <li>
-                <a href="https://safelink.strikepointsec.com" className="link-focus text-sm text-muted hover:text-white">
-                  SafeLink
-                </a>
-              </li>
-            </ul>
+          <div className="flex flex-col gap-6 sm:flex-row sm:gap-12">
+            <div>
+              <Link href="/" className="link-focus flex items-center gap-2">
+                <Image src="/logo.svg" alt="Strikepoint Security logo" width={24} height={24} className="h-6 w-6" />
+                <span className="text-sm font-semibold text-white">Strikepoint Security</span>
+              </Link>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-white">Products</p>
+              <ul className="mt-2 space-y-1">
+                <li>
+                  <a href="https://safelink.strikepointsec.com" className="link-focus text-sm text-muted hover:text-white">
+                    SafeLink
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="flex flex-col items-start gap-3 sm:items-end">
             <div className="flex gap-4 text-sm text-muted">

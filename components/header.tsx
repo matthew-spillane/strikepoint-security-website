@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Shield, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { navLinks, primaryCta } from "@/components/site-data";
 import { CtaButton } from "@/components/ui";
 
@@ -12,8 +13,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/90 bg-surface/80 backdrop-blur">
       <div className="section-wrap flex h-14 items-center justify-between">
-        <Link href="/" className="link-focus flex items-center gap-2">
-          <Shield className="h-5 w-5 text-accent" />
+        <Link href="/" className="link-focus flex items-center gap-2.5">
+          <Image src="/logo.svg" alt="Strikepoint Security logo" width={32} height={32} className="h-8 w-8 sm:h-9 sm:w-9" priority />
           <span className="text-base font-semibold tracking-wide text-white">Strikepoint Security</span>
         </Link>
         <nav className="hidden items-center gap-5 md:flex">
