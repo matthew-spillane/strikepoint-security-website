@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -9,7 +8,7 @@ export function Footer() {
           <div className="flex flex-col gap-6 sm:flex-row sm:gap-12">
             <div>
               <Link href="/" className="link-focus flex items-center gap-2">
-                <Image src="/logo.png" alt="Strikepoint Security logo" width={24} height={24} className="h-6 w-6" />
+                <img src="/logo.png" alt="Strikepoint Security logo" className="h-6 w-6" />
                 <span className="text-sm font-semibold text-white">Strikepoint Security</span>
               </Link>
             </div>
