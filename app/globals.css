@@ -22,3 +22,30 @@ body {
 .link-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface;
 }
+
+/* Hero animated background */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 60% 50% at 10% 10%, rgba(239, 68, 68, 0.16), transparent),
+    radial-gradient(ellipse 40% 40% at 80% 0%, rgba(59, 130, 246, 0.10), transparent);
+  animation: hero-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes hero-pulse {
+  0% {
+    background:
+      radial-gradient(ellipse 60% 50% at 10% 10%, rgba(239, 68, 68, 0.16), transparent),
+      radial-gradient(ellipse 40% 40% at 80% 0%, rgba(59, 130, 246, 0.10), transparent);
+  }
+  100% {
+    background:
+      radial-gradient(ellipse 65% 55% at 15% 15%, rgba(239, 68, 68, 0.22), transparent),
+      radial-gradient(ellipse 45% 45% at 75% 5%, rgba(59, 130, 246, 0.14), transparent);
+  }
+}
+
+/* Subtle dot grid overlay for hero */
+.hero-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

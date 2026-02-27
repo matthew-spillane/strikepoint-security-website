@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui";
 export default function HowItWorksPage() {
   return (
     <PageShell>
-      <section className="section-wrap py-20">
+      <section className="section-wrap py-16">
         <SectionHeading
           title="How SafeLink works"
           description="SafeLink combines enrichment, dynamic analysis, and policy-driven scoring to generate actionable verdicts quickly."
@@ -15,7 +15,7 @@ export default function HowItWorksPage() {
             ["Multilayer analysis", "We evaluate reputation feeds, DNS/WHOIS posture, TLS metadata, redirect chains, and rendered content artifacts."],
             ["Verdict and response", "SafeLink issues a risk score with evidence highlights and recommended response actions for analysts."]
           ].map(([title, description]) => (
-            <article key={title} className="card p-6">
+            <article key={title} className="card border-l-2 border-l-accent p-5">
               <h3 className="text-xl font-semibold text-white">{title}</h3>
               <p className="mt-2 text-muted">{description}</p>
             </article>

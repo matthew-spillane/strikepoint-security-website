@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="32" y1="4" x2="32" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M32 4 L56 16 V36 C56 48 44 57 32 60 C20 57 8 48 8 36 V16 Z" fill="url(#g)" opacity="0.15" stroke="url(#g)" stroke-width="2"/>
+  <!-- Inner shield highlight -->
+  <path d="M32 10 L50 19 V35 C50 45 40 52 32 55 C24 52 14 45 14 35 V19 Z" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.6"/>
+  <!-- Checkmark / crosshair center -->
+  <path d="M24 32 L30 38 L40 26" stroke="#ef4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
