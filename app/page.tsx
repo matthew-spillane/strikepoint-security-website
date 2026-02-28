@@ -125,20 +125,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4 md:grid-cols-3">
-          {[
-            ["99.96%", "Analysis pipeline uptime"],
-            ["< 5 sec", "Median initial verdict time"],
-            ["28M+", "URLs processed annually"]
-          ].map(([value, label]) => (
-            <article key={label} className="card p-5">
-              <p className="text-3xl font-semibold text-white">{value}</p>
-              <p className="mt-1 text-sm text-muted">{label}</p>
-            </article>
-          ))}
-        </div>
-      </section>
 
       <section className="section-wrap pb-16">
         <div className="card border-red-900/40 bg-red-950/20 p-5">
