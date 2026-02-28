@@ -40,6 +40,7 @@ app/
   about/page.tsx
   contact/page.tsx
   how-it-works/page.tsx
+  pricing/page.tsx
   privacy/page.tsx
   products/safelink/page.tsx
   terms/page.tsx
